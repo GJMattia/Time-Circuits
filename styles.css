@@ -1,0 +1,625 @@
+/*  MAIN PAGE   */
+html {
+    background-image: url('/images/space.jpeg');
+    background-size: cover;
+    font-weight: 900;
+    font-family: Arial;
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "DS-DIGIT";
+    src: url("/fonts/DS-DIGIT.TTF") format("TTF");
+}
+
+.container {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  TIME CIRCUITS BOX   */
+
+.mainframe {
+    justify-self: center;
+    align-self: center;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    width: 75rem;
+    height: 51rem;
+    background-image: url("/images/gray.jpeg");
+    background-size: cover;
+    border: 1px solid black;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    width: 75rem;
+    height: 17rem;
+}
+
+.destination {
+    border: 1px solid black;
+    color: red;
+}
+
+.present {
+    color: lawngreen;
+    border: 1px solid black;
+}
+
+.previous {
+    color: yellow;
+    border: 1px solid black;
+}
+
+.sticker {
+    position: absolute;
+    justify-content: center;
+    align-self: last baseline;
+    padding: .3rem;
+    width: 17rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    background-color: black;
+}
+
+.time {
+    position: relative;
+    bottom: .5rem;
+    font-family: "DS-Digital";
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    width: 10rem;
+    height: 7rem;
+    background-color: black;
+    margin: 1rem;
+}
+
+.month {
+    position: relative;
+    right: 6rem;
+}
+
+.day {
+    position: relative;
+    right: 6rem;
+    width: 7rem;
+}
+
+.year {
+    position: relative;
+    right: 6rem;
+    width: 13rem;
+}
+
+.hour {
+    position: relative;
+    width: 7rem;
+    left: 6rem;
+}
+
+.minute {
+    position: relative;
+    width: 7rem;
+    left: 6rem;
+}
+
+/*  RED LABELS   */
+
+.labellist {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    align-self: baseline;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.red {
+    position: relative;
+    bottom: .5rem;
+    padding: .5rem;
+    background-color: crimson;
+    margin-right: 8rem;
+}
+
+.monthlabel {
+    position: relative;
+    left: .3rem;
+}
+
+.daylabel {
+    position: relative;
+    right: 2.5rem;
+}
+
+.yearlabel {
+    position: relative;
+    right: 3rem;
+}
+
+.hourlabel {
+    position: relative;
+    left: 7.5rem;
+}
+
+.minlabel {
+    position: relative;
+    left: 4rem;
+}
+
+/*  AM AND PM   */
+
+.ampmcomponent {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.ampm {
+    position: relative;
+    left: 7rem;
+    top: 2.6rem;
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+.switch {
+    width: 4.5rem;
+    padding: .2rem;
+    background-color: crimson;
+}
+
+
+.am {
+    font-size: 2rem;
+    color: black;
+}
+
+.pm {
+    font-size: 2rem;
+    color: black;
+}
+
+
+.destinationTime:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Colon between hours and minutes */
+.colonbox {
+    position: absolute;
+    font-size: 5rem;
+}
+
+.colon {
+    position: relative;
+    left: 24rem;
+}
+
+/*  AM PM class adds    */
+
+.amPresent {
+    color: lawngreen;
+}
+
+.pmPresent {
+    color: lawngreen;
+}
+
+.amPrevious {
+    color: lawngreen;
+}
+
+.pmPrevious {
+    color: lawngreen;
+}
+
+.amDestination {
+    color: lawngreen;
+}
+
+.pmDestination {
+    color: lawngreen;
+}
+
+.clicker:hover {
+    cursor: pointer;
+}
+
+/*  Keypad  */
+
+.keypadunit {
+    position: relative;
+    right: 54rem;
+    bottom: 35rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    background-image: url('/images/black.jpg');
+    background-size: cover;
+}
+
+.keypad {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20rem;
+    height: 30rem;
+    border: 1px solid white;
+    background-image: url('/images/blue2.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+
+}
+
+.pad {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-image: url('/images/blue.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    border: 1px solid black;
+    width: 5rem;
+    height: 5rem;
+    margin: .5rem;
+}
+
+.pad:hover {
+    background-image: url('/images/bluehover.jpg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+.light {
+    position: relative;
+    left: .5rem;
+    grid-column: 1;
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: radial-gradient(closest-side at center, #393939, #000000);
+}
+
+.lights {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+}
+
+.redlight {
+    background: radial-gradient(closest-side at center, #ff0000, #000000);
+}
+
+.yellowlight {
+    background: radial-gradient(closest-side at center, #ffee00, #000000);
+}
+
+.greenlight {
+    background: radial-gradient(closest-side at center, #5aec00, #000000);
+}
+
+.confirm {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    position: relative;
+    left: .5rem;
+    grid-column: 1;
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+    border-radius: .5rem;
+
+}
+
+.bluelight {
+    background: radial-gradient(closest-side at center, #01bbf8, #000000);
+}
+
+.confirm:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+/*  SPEEDOMETER */
+
+.speedometer {
+    position: relative;
+    bottom: 85rem;
+    left: 54rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 28rem;
+    height: 12rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    background-image: url("/images/blue.jpg");
+    background-size: cover;
+
+}
+
+.set {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    right: 2.5rem;
+    width: 8rem;
+    color: white;
+    font-size: 2rem;
+    list-style: none;
+}
+
+.speedtext {
+    text-align: center;
+    background-color: black;
+    margin: .5rem;
+}
+
+.eightyeight {
+    background-color: red;
+}
+
+.settext {
+    position: relative;
+    right: 1rem;
+    width: 9rem;
+}
+
+.speedsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: .5rem;
+    position: relative;
+    right: 1rem;
+    width: 16rem;
+    height: 8rem;
+    background-color: black;
+}
+
+.speed {
+    font-family: "DS-digital";
+    position: relative;
+    bottom: 8rem;
+    left: 2rem;
+    grid-column: 1;
+    font-size: 8rem;
+    color: red;
+}
+
+.mph {
+    font-family: "DS-digital";
+    position: relative;
+    top: 3rem;
+    left: 4rem;
+    grid-column: 2;
+    font-size: 2rem;
+    color: red;
+}
+
+
+
+.pedal {
+    position: relative;
+    bottom: 80rem;
+    left: 55rem;
+    width: 10rem;
+    height: 20rem;
+    font-size: 4rem;
+    border-radius: 1rem;
+    background-image: url("/images/pedal.jpg");
+    background-size: cover;
+}
+
+.pedal:hover {
+    cursor: pointer;
+
+}
+
+/*  Mr. Fusion  */
+
+.chamber {
+    position: relative;
+    bottom: 133rem;
+    right: 54rem;
+    display: grid;
+    grid-template-rows: 40% 40% 20%;
+    width: 28rem;
+    height: 12rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    background-image: url("/images/blue.jpg");
+    background-size: cover;
+    text-align: center;
+
+}
+
+.plight {
+    grid-row: 1;
+    border-radius: .5rem;
+    border: 1px solid black;
+    background: radial-gradient(closest-side at center, #979797, #000000);
+    width: 7rem;
+    height: 4rem;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    right: 1rem;
+}
+
+.plightempty {
+    background: radial-gradient(closest-side at center, #ff0101, #000000);
+}
+
+.plightfull {
+    background: radial-gradient(closest-side at center, #01ff01, #000000);
+}
+
+.fuelbar {
+    position: relative;
+    right: 1rem;
+    justify-self: center;
+    align-self: center;
+    grid-row: 2;
+    width: 30rem;
+}
+
+
+.pointer {
+
+    color: black;
+    position: relative;
+    right: 13rem;
+    bottom: 2.5rem;
+    grid-row: 3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5rem;
+}
+
+.pointerfull {
+    left: 11.5rem;
+}
+
+.roentgens {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    position: relative;
+    bottom: 3.7rem;
+}
+
+
+/*  LOADING PLUTONIUM   */
+
+.load {
+    position: relative;
+    bottom: 100.5rem;
+    left: 56rem;
+    border-radius: 1rem;
+    display: flex;
+    background-image: url("/images/blue.jpg");
+    background-size: cover;
+    border: 1px solid black;
+    width: 15rem;
+    height: 5rem;
+}
+
+.hazard {
+    position: relative;
+    top: .5rem;
+    left: .5rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.loadtitle {
+    position: relative;
+    left: 4rem;
+    bottom: 1rem;
+    font-size: 1.8rem;
+    font-family: "DS-digital";
+}
+
+.plutitle {
+    position: relative;
+    right: 1.8rem;
+    top: 1rem;
+    font-size: 1.8rem;
+    font-family: "DS-digital";
+
+
+}
+
+.load:hover {
+    background-color: crimson;
+    cursor: pointer;
+}
+
+/*  Time Circuits Switch    */
+
+
+.timelever {
+    position: relative;
+    bottom: 83rem;
+    left: 43rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url('/images/blue.jpg');
+    background-size: cover;
+    width: 8rem;
+    height: 15rem;
+    border-radius: .5rem;
+    border: 1px solid black;
+
+}
+
+.go {
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+.stopp {
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: crimson;
+    border-radius: 1rem;
+}
+
+.timeon {
+    background-color: lawngreen;
+}
+
+.timeoff {
+    background-color: gray;
+}
+
+.lever {
+    width: 10rem;
+    height: 9rem;
+}
+
+.lever:hover {
+    cursor: pointer;
+}

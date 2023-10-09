@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>The Time Circuits</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="mainframe">
+      <div class="destination frame">
+        <ul class="labellist">
+          <li class="red monthlabel">MONTH</li>
+          <li class="red daylabel">DAY</li>
+          <li class="red yearlabel">YEAR</li>
+          <li class="red hourlabel">HOUR</li>
+          <li class="red minlabel">MIN</li>
+        </ul>
+        <div id="destinationMonth" class="month time destinationTime"></div>
+        <div id="destinationDay" class="day time destinationTime"></div>
+        <div id="destinationYear" class="year time destinationTime"></div>
+        <div id="destinationHour" class="hour time destinationTime"></div>
+        <div id="destinationMin" class="minute time destinationTime"></div>
+        <div class="colonbox">
+          <p class="colon">:</p>
+        </div>
+        <div class="ampmcomponent">
+          <ul class="ampm">
+            <li class="switch">AM</li>
+            <li id="amDestination" class="am clicker">⦿</li>
+            <li class="switch">PM</li>
+            <li id="pmDestination" class="pm clicker">⦿</li>
+          </ul>
+        </div>
+        <p class="sticker">DESTINATION TIME</p>
+      </div>
+      <div class="present frame">
+        <ul class="labellist">
+          <li class="red monthlabel">MONTH</li>
+          <li class="red daylabel">DAY</li>
+          <li class="red yearlabel">YEAR</li>
+          <li class="red hourlabel">HOUR</li>
+          <li class="red minlabel">MIN</li>
+        </ul>
+        <div id="presentMonth" class="month time"></div>
+        <div id="presentDay" class="day time"></div>
+        <div id="presentYear" class="year time"></div>
+        <div id="presentHour" class="hour time"></div>
+        <div id="presentMin" class="minute time"></div>
+        <div class="colonbox">
+          <p class="colon">:</p>
+        </div>
+
+        <div class="ampmcomponent">
+          <ul class="ampm">
+            <li class="switch">AM</li>
+            <li id="amPresent" class="am">⦿</li>
+            <li class="switch">PM</li>
+            <li id="pmPresent" class="pm">⦿</li>
+          </ul>
+        </div>
+
+        <p class="sticker">PRESENT TIME</p>
+      </div>
+      <div class="previous frame">
+        <ul class="labellist">
+          <li class="red monthlabel">MONTH</li>
+          <li class="red daylabel">DAY</li>
+          <li class="red yearlabel">YEAR</li>
+          <li class="red hourlabel">HOUR</li>
+          <li class="red minlabel">MIN</li>
+        </ul>
+        <div id="previousMonth" class="month time"></div>
+        <div id="previousDay" class="day time"></div>
+        <div id="previousYear" class="year time"></div>
+        <div id="previousHour" class="hour time"></div>
+        <div id="previousMin" class="minute time"></div>
+        <div class="colonbox">
+          <p class="colon">:</p>
+        </div>
+
+        <div class="ampmcomponent">
+          <ul class="ampm">
+            <li class="switch">AM</li>
+            <li id="amPrevious" class="am">⦿</li>
+            <li class="switch">PM</li>
+            <li id="pmPrevious" class="pm">⦿</li>
+          </ul>
+        </div>
+        <p class="sticker">LAST TIME DEPARTED</p>
+      </div>
+    </div>
+    <div class="keypadunit">
+      <div class="lights">
+        <div id="redlight" class="light"></div>
+        <div id="yellowlight" class="light"></div>
+        <div id="greenlight" class="light"></div>
+        <div id="bluelight" class="light"></div>
+        <div id="confirm" class="confirm">𓋹</div>
+      </div>
+      <div class="keypad">
+        <button id="button" class="pad" data-sound="audio/padOne.mp3">1</button>
+        <button id="button" class="pad" data-sound="audio/padTwo.mp3">2</button>
+        <button id="button" class="pad" data-sound="audio/padThree.mp3">3</button>
+        <button id="button" class="pad" data-sound="audio/padFour.mp3">4</button>
+        <button id="button" class="pad" data-sound="audio/padFive.mp3">5</button>
+        <button id="button" class="pad" data-sound="audio/padSix.mp3">6</button>
+        <button id="button" class="pad" data-sound="audio/padSeven.mp3">7</button>
+        <button id="button" class="pad" data-sound="audio/padEight.mp3">8</button>
+        <button id="button" class="pad" data-sound="audio/padNine.mp3">9</button>
+        <button id="button" class="pad" data-sound="audio/padZero.mp3">#</button>
+        <button id="button" class="pad" data-sound="audio/padZero.mp3">0</button>
+        <button id="button" class="pad" data-sound="audio/padZero.mp3">C</button>
+
+      </div>
+    </div>
+    <div class="speedometer">
+      <ul class="set">
+        <li class="speedtext settext">SET</li>
+        <li class="speedtext">TO</li>
+        <li class="speedtext eightyeight">88</li>
+      </ul>
+      <div class="speedsection">
+        <p id="speed" class="speed">0</p>
+        <p class="mph">MPH</p>
+      </div>
+    </div>
+    <button id="pedal" class="pedal"></button>
+    <div id="timelever" class="timelever">
+
+
+      <div id="go" class="go"></div>
+      <div id="stopp" class="stopp"></div>
+      <img id="lever" class="lever" src="images/down.png">
+    </div>
+
+    <div class="chamber">
+      <div id="plight" class="plight"></div>
+
+      <img class="fuelbar" src="/images/FuelBar.png" />
+      <p id="pointer" class="pointer">^</p>
+      <p class="roentgens">ROENTGENS</p>
+    </div>
+
+
+
+
+    <div id="load" class="load">
+      <img class="hazard" src="images/hazard.png">
+      <p class="loadtitle">LOAD</p>
+      <p class="plutitle">PLUTONIUM</p>
+    </div>
+
+    
+  </div>
+</body>
+
+<script src="program.js"></script>
+</body>
+
+</html>
