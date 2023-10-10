@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-- Click here to start your journey: [Time Circuits](https://gjmattia.github.io/LOST-Swan-Timer/)
+- Click here to start your journey: [Time Circuits](https://gjmattia.github.io/Time-Circuits/)
 
 - Turn the Time Circuits on using the lever.
 - Load Plutonium into the chamber.
