@@ -1,6 +1,6 @@
 /*  MAIN PAGE   */
 html {
-    background-image: url('/images/space.jpeg');
+    background-image: url('../images/space.jpeg');
     background-size: cover;
     font-weight: 900;
     font-family: Arial;
@@ -30,7 +30,7 @@ html {
     flex-direction: column;
     width: 75rem;
     height: 51rem;
-    background-image: url("/images/gray.jpeg");
+    background-image: url("../images/gray.jpeg");
     background-size: cover;
     border: 1px solid black;
 }
@@ -256,7 +256,7 @@ html {
     height: 35rem;
     border-radius: 1rem;
     border: 1px solid black;
-    background-image: url('/images/black.jpg');
+    background-image: url('../images/black.jpg');
     background-size: cover;
 }
 
@@ -284,7 +284,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    background-image: url('/images/blue.jpg');
+    background-image: url('../images/blue.jpg');
     background-size: cover;
     border-radius: .5rem;
     border: 1px solid black;
@@ -294,7 +294,7 @@ html {
 }
 
 .pad:hover {
-    background-image: url('/images/bluehover.jpg');
+    background-image: url('../images/bluehover.jpg');
     background-size: cover;
     cursor: pointer;
 }
@@ -372,7 +372,7 @@ html {
     height: 12rem;
     border: 1px solid black;
     border-radius: .5rem;
-    background-image: url("/images/blue.jpg");
+    background-image: url("../images/blue.jpg");
     background-size: cover;
 
 }
@@ -465,7 +465,7 @@ html {
     height: 12rem;
     border: 1px solid black;
     border-radius: .5rem;
-    background-image: url("/images/blue.jpg");
+    background-image: url("../images/blue.jpg");
     background-size: cover;
     text-align: center;
 
@@ -533,7 +533,7 @@ html {
     left: 56rem;
     border-radius: 1rem;
     display: flex;
-    background-image: url("/images/blue.jpg");
+    background-image: url("../images/blue.jpg");
     background-size: cover;
     border: 1px solid black;
     width: 15rem;

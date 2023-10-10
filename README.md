@@ -12,6 +12,8 @@
 
 ## Getting Started
 
+- Click here to start your journey: [Time Circuits](https://gjmattia.github.io/LOST-Swan-Timer/)
+
 - Turn the Time Circuits on using the lever.
 - Load Plutonium into the chamber.
 - Enter your destination time onto the keypad and click the Egyption symbol to confirm.
