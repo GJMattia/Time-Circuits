@@ -392,11 +392,11 @@ confirm.addEventListener('click', destinationCheck);
 let circuitsOn = new Audio("audio/TimeCircuitsON.mp3");
 let circuitsOff = new Audio("audio/TimeCircuitsOff.mp3");
 let circuitConfirm = new Audio("audio/TimeConfirm.mp3");
-let insert = new Audio("audio/load.mp3");
+let insert = new Audio("audio/Load.mp3");
 let timetravel = new Audio("audio/timetravel.mp3");
 let destinysound = new Audio('audio/destiny.mp3');
 
-let plutoniumEmpty = new Audio('audio/plutoniumempty.mp3');
+let plutoniumEmpty = new Audio('audio/PlutoniumEmpty.mp3');
 plutoniumEmpty.volume = 0.3;
 
 //  Keypad lights

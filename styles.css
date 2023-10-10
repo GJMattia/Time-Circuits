@@ -9,7 +9,7 @@ html {
 
 @font-face {
     font-family: "DS-DIGIT";
-    src: url("/fonts/DS-DIGIT.TTF") format("TTF");
+    src: url("fonts/DS-DIGIT.TTF") format("TTF");
 }
 
 .container {
@@ -30,7 +30,7 @@ html {
     flex-direction: column;
     width: 75rem;
     height: 51rem;
-    background-image: url("../images/gray.jpeg");
+    background-image: url("images/gray.jpeg");
     background-size: cover;
     border: 1px solid black;
 }
@@ -256,7 +256,7 @@ html {
     height: 35rem;
     border-radius: 1rem;
     border: 1px solid black;
-    background-image: url('../images/black.jpg');
+    background-image: url('images/black.jpg');
     background-size: cover;
 }
 
@@ -271,7 +271,7 @@ html {
     width: 20rem;
     height: 30rem;
     border: 1px solid white;
-    background-image: url('/images/blue2.jpg');
+    background-image: url('images/blue2.jpg');
     background-size: cover;
     border-radius: .5rem;
 
@@ -284,7 +284,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    background-image: url('../images/blue.jpg');
+    background-image: url('images/blue.jpg');
     background-size: cover;
     border-radius: .5rem;
     border: 1px solid black;
@@ -294,7 +294,7 @@ html {
 }
 
 .pad:hover {
-    background-image: url('../images/bluehover.jpg');
+    background-image: url('images/bluehover.jpg');
     background-size: cover;
     cursor: pointer;
 }
@@ -372,7 +372,7 @@ html {
     height: 12rem;
     border: 1px solid black;
     border-radius: .5rem;
-    background-image: url("../images/blue.jpg");
+    background-image: url("images/blue.jpg");
     background-size: cover;
 
 }
@@ -444,7 +444,7 @@ html {
     height: 20rem;
     font-size: 4rem;
     border-radius: 1rem;
-    background-image: url("/images/pedal.jpg");
+    background-image: url("images/pedal.jpg");
     background-size: cover;
 }
 
@@ -465,7 +465,7 @@ html {
     height: 12rem;
     border: 1px solid black;
     border-radius: .5rem;
-    background-image: url("../images/blue.jpg");
+    background-image: url("images/blue.jpg");
     background-size: cover;
     text-align: center;
 
@@ -533,7 +533,7 @@ html {
     left: 56rem;
     border-radius: 1rem;
     display: flex;
-    background-image: url("../images/blue.jpg");
+    background-image: url("images/blue.jpg");
     background-size: cover;
     border: 1px solid black;
     width: 15rem;
@@ -582,7 +582,7 @@ html {
     justify-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-image: url('/images/blue.jpg');
+    background-image: url('images/blue.jpg');
     background-size: cover;
     width: 8rem;
     height: 15rem;
